@@ -1,40 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import books1 from "../../images/books1.jpg";
+import TextAndImageCard from "../commonComponents/TextAndImageCard";
+import books10 from "../../images/books10.jpg";
+import books9 from "../../images/books9.jpg"
+import { homepagedata } from "../../data/homepagedata";
 
 export default function HomePage(){
-    return(
+    return (
         <PageWrapper>
-            <div className="textWrap">
-                <div>
-                <img className="imageThing" src={books1} alt="picture of a book"/>
-                </div>
-                
-            This website was created with the purpose of informing people more about the feminist critical theory and how to apply it to literary texts. Visit the “Feminism” page to learn more about this critical theory. The “Evaluation” page provides an example of using this critical theory on the text Harry Potter and the Sorcerer’s Stone. Finally, the “Bechdel Test” page provides information about using the Bechdel test to see if a film respectfully represents females, and provides a quiz to see if you can guess if certain movies pass the test. 
-            </div>
+            <div className="marginTop"/>
+            <TextAndImageCard image={books10} text={homepagedata.text1}/>
+            <TextAndImageCard image={books9} text={homepagedata.text2}/>
+            <div className="marginBottom"/>
         </PageWrapper>
     )
 }
 
-const PageWrapper = styled.div`
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding:20px;
-    .textWrap{
-        display:flex;
-        flex-direction:row;
-        justify-content:flex-start;
-        max-width:1000px;
-        padding:10px;
-        background-color:var(--mediumGrey);
-        border-radius: 10px;
-        font-size: 1.2rem;
-    }
-    .imageThing{
-        border-radius:50%;
-        width:50%;
-        height:90%;
-    }
 
+const PageWrapper = styled.div`
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    width:100%;
+    padding-top:40px;
+    padding-bottom:60px;
+    //margin-left:40px;
+    .marginTop{
+        margin-bottom:40px;
+    }
+    .marginBottom{
+        margin-bottom:var(--marginBottom);
+    }
 `;

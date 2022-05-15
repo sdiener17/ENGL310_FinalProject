@@ -6,6 +6,9 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./components/homePage/HomePage";
+import InformationPage from "./components/informationPage/InformationPage";
+import EvaluationPage from "./components/evaluationPage/EvaluationPage";
+import BibliographyPage from "./components/bibliographyPage/BibliographyPage";
 
 export default function App() {
   const [isSurveySubmitted, setIsSurveySubmitted] = useState(false);
@@ -24,6 +27,21 @@ export default function App() {
                 path="/"
                 element={<HomePage/>}
               />
+
+              <Route
+                exact path="/information"
+                element={<InformationPage/>}
+                />
+
+              <Route
+                exact path="/evaluation"
+                element={<EvaluationPage/>}
+                />
+
+              <Route
+                exact path="/information"
+                element={<BibliographyPage/>}
+                />
               
 
             </Routes>

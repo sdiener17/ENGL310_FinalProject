@@ -30,6 +30,28 @@ export default function NavBar() {
           </Link>
 
           <Link
+            to="/information"
+            className={
+              "sidebar-link " + (currentPage === "information" ? "lit" : "unlit")
+            }
+            id="informationLink"
+            onClick={() => setCurrentPage("information")}
+          >
+            Information
+          </Link>
+
+          <Link
+            to="/evaluation"
+            className={
+              "sidebar-link " + (currentPage === "evaluation" ? "lit" : "unlit")
+            }
+            id="evaluationLink"
+            onClick={() => setCurrentPage("evaluation")}
+          >
+            Evaluation
+          </Link>
+
+          <Link
             to="/survey"
             className={
               "sidebar-link " + (currentPage === "survey" ? "lit" : "unlit")
@@ -38,6 +60,17 @@ export default function NavBar() {
             onClick={() => setCurrentPage("survey")}
           >
             Survey
+          </Link>
+
+          <Link
+            to="/bibliography"
+            className={
+              "sidebar-link " + (currentPage === "bibliography" ? "lit" : "unlit")
+            }
+            id="bibliography"
+            onClick={() => setCurrentPage("bibliography")}
+          >
+            Bibliography
           </Link>
 
         </li>
