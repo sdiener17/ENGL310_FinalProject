@@ -9,10 +9,13 @@ import HomePage from "./components/homePage/HomePage";
 import InformationPage from "./components/informationPage/InformationPage";
 import EvaluationPage from "./components/evaluationPage/EvaluationPage";
 import BibliographyPage from "./components/bibliographyPage/BibliographyPage";
+import SurveyPage from "./components/surveyPage/SurveyPage";
+import SurveyResults from "./components/surveyPage/SurveyResults";
 
 export default function App() {
   const [isSurveySubmitted, setIsSurveySubmitted] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
+  
 
   return (
     <PageWrapper>
@@ -42,6 +45,18 @@ export default function App() {
                 exact path="/information"
                 element={<BibliographyPage/>}
                 />
+
+              <Route
+                exact path="/survey"
+                element={<SurveyPage userAnswers={userAnswers} setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
+                />
+
+              {isSurveySubmitted &&(
+                  <Route
+                    exact path="/surveyresults"
+                    element={<SurveyResults userAnswers={userAnswers}/>}
+                    />
+                )}
               
 
             </Routes>
