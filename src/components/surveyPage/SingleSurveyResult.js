@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 
-export default function SingleSurveyResult({question, correctAnswer, userAnswer, index}){
+export default function SingleSurveyResult({question, correctAnswer, userAnswer, index, explanation}){
 
     let renderLabel = function(entry) {
         return entry.label + " "+ "("+entry.students+")";
@@ -16,6 +16,8 @@ export default function SingleSurveyResult({question, correctAnswer, userAnswer,
             <div className="userAnswerDiv">Your Answer: {userAnswer} </div>
             <div className="spacerDiv">&nbsp;</div>
             <div className="correctAnswerDiv">Correct Answer: {correctAnswer}</div>
+            <div className="spacerDiv">&nbsp;</div>
+            <div className="explanationDiv">Explanation: {explanation}</div>
             </div>
         </PageWrapper>
 
@@ -29,7 +31,7 @@ const PageWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom:40px;
-    width:700px;
+    width:1400px;
     flex-wrap: wrap;
     border-bottom:5px solid var(--primarySiteColor);
     .pie{
@@ -48,6 +50,9 @@ const PageWrapper = styled.div`
         display:flex;
         flex-direction: row;
         align-items: center;
+    }
+    .explanationDiv{
+        width:600px;
     }
 `;
 

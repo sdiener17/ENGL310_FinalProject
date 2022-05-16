@@ -19,6 +19,8 @@ export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAn
     const [radioValueQ4, setRadioValueQ4] = useState(null);
     const [radioValueQ5, setRadioValueQ5] = useState(null);
     const [radioValueQ6, setRadioValueQ6] = useState(null);
+    const [radioValueQ7, setRadioValueQ7] = useState(null);
+    const [radioValueQ8, setRadioValueQ8] = useState(null);
     const [isError, setIsError] = useState(false);
 
 
@@ -57,19 +59,27 @@ export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAn
             q3Answer:radioValueQ3,
             q4Answer:radioValueQ4,
             q5Answer:radioValueQ5,
-            q6Answer:radioValueQ6
+            q6Answer:radioValueQ6,
+            q7Answer:radioValueQ7,
+            q8Answer:radioValueQ8
         }
         setUserAnswers(tempAn);
     }
 
      return(
         <PageWrapper>
-            <div className="surveyTitle">Intellectual Property Survey</div>
-            <div className="textStuff">The purpose of this survey is to allow users to think for themselves what they think is ethical or not.
-                Once completed, you will be shown what other users answered to see how your answers line up.
+            <div className="surveyTitle">Bechdel Test Survey</div>
+            <div className="textStuff">This survey gives users an opportunity to guess which of these common movies pass 
+                the Bechdel test (discussed in detail on the information page) and see how many they can guess correctly.
             </div>
             <SurveyQuestion questionText={questions[0].questionText} setRadioValue={setRadioValueQ1} nameOfGroup="group1"/>
             <SurveyQuestion questionText={questions[1].questionText} setRadioValue={setRadioValueQ2} nameOfGroup="group2"/>
+            <SurveyQuestion questionText={questions[2].questionText} setRadioValue={setRadioValueQ3} nameOfGroup="group3"/>
+            <SurveyQuestion questionText={questions[3].questionText} setRadioValue={setRadioValueQ4} nameOfGroup="group4"/>
+            <SurveyQuestion questionText={questions[4].questionText} setRadioValue={setRadioValueQ5} nameOfGroup="group5"/>
+            <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/>
+            <SurveyQuestion questionText={questions[6].questionText} setRadioValue={setRadioValueQ7} nameOfGroup="group7"/>
+            <SurveyQuestion questionText={questions[7].questionText} setRadioValue={setRadioValueQ8} nameOfGroup="group8"/>
             {/* <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/> */}
             {isError &&(
                 <div className="errorDiv">Please answer all questions.</div>
