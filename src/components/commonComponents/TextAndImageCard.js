@@ -21,7 +21,7 @@ const PageWrapper = styled.div`
     flex-direction:row;
     flex-wrap:wrap;
     align-items:center;
-    justify-content:center;
+    justify-content:left;
 
     margin-bottom:60px;
     .cardImage{
@@ -46,8 +46,8 @@ const PageWrapper = styled.div`
         border-radius: 10px;
         font-size: 1.2rem;
     }
-    .flex-item img{
+    /* .flex-item img{
         flex-grow:0;
         flex-shrink:0;
-    }
+    } */
 `;

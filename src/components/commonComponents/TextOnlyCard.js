@@ -18,7 +18,7 @@ const PageWrapper = styled.div`
     flex-direction:row;
     flex-wrap:wrap;
     align-items:center;
-    justify-content:center;
+    justify-content:left;
 
     margin-bottom:60px;
 

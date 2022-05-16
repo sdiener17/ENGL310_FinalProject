@@ -7,6 +7,7 @@ import { informationpagedata } from "../../data/informationpagedata";
 import waves1 from "../../images/waves1.jpg";
 import reading1 from "../../images/reading1.jpg";
 import woman2 from "../../images/woman2.jpg";
+import woman1 from "../../images/woman1.jpg";
 
 export default function HomePage(){
     return (
@@ -14,7 +15,7 @@ export default function HomePage(){
             <div className="marginTop"/>
             <h3>Defining Feminism And The Feminist Critical Theory</h3>
             <h1>What is Feminism?</h1>
-            <TextAndImageCard image={books1} text={informationpagedata.text1}/>
+            <TextAndImageCard image={woman1} text={informationpagedata.text1}/>
             <h1>What are the different waves of feminism?</h1>
             <TextAndImageCard image={waves1} text={informationpagedata.text2}/>
             <h1>Isn't feminism all about women being victims?</h1>
