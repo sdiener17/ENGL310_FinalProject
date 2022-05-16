@@ -16,7 +16,7 @@ export const informationpagedata = {
         subjectivity). This helps shift the focus away from them being victims to focus on their accomplishments instead, which 
         in turn shows their value in society.`,
     text4:`Strong female characters in literary works are female characters who exhibit great strength in one or more areas. For 
-        example, Hermione Granger in the Harry Potter series is one of these characters, showing great knowledge and skill with magic. 
+        example, Hermione Granger in the *Harry Potter* series is one of these characters, showing great knowledge and skill with magic. 
         Often times, these characters seem to reject all aspects of traditional femininity and are extremely powerful with few 
         weaknesses. As Parker states “Such characters might seem to reinforce a feminist desire for women to break past traditional 
         barriers and control their own lives.” (153). In this sense, these characters are great role-models, but upon further 

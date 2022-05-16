@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ReactMarkdown from 'react-markdown'
 
 export default function InfoCard({image, text}){
     return(
@@ -8,7 +9,7 @@ export default function InfoCard({image, text}){
             <div className="imageContainer">
                 <img className="cardImage" src={image} ></img>
             </div>
-                <div>{text}</div>
+                <ReactMarkdown>{text}</ReactMarkdown>
             </div>
             
         </PageWrapper>

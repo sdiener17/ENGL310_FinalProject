@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import ReactMarkdown from 'react-markdown'
 
 export default function InfoCard({text}){
     return(
         <PageWrapper>
-            <div className="textWrap">
+            <ReactMarkdown className="textWrap">
                 {text}
-            </div>
+            </ReactMarkdown>
             
         </PageWrapper>
     )
