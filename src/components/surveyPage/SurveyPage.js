@@ -2,7 +2,10 @@ import React, {useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { questions } from "../../data/questions";
+import { surveypagedata } from "../../data/surveypagedata";
 import SurveyQuestion from "./SurveyQuestion";
+import TextOnlyCard from "../commonComponents/TextOnlyCard";
+
 
 const userAnswerData =
     {
@@ -68,10 +71,14 @@ export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAn
 
      return(
         <PageWrapper>
-            <div className="surveyTitle">Bechdel Test Survey</div>
-            <div className="textStuff">This survey gives users an opportunity to guess which of these common movies pass 
-                the Bechdel test (discussed in detail on the information page) and see how many they can guess correctly.
-            </div>
+            <h3>The Bechdel Test</h3>
+            <h1>What is the Bechdel Test?</h1>
+            <TextOnlyCard text={surveypagedata.text1}/>
+            <h1>Is the Bechdel test a good test to see if women are portrayed positively?</h1>
+            <TextOnlyCard text={surveypagedata.text2}/>
+            <TextOnlyCard text={surveypagedata.text3}/>
+            <TextOnlyCard text={surveypagedata.text4}/>
+            <h3>Bechdel Test Survey</h3>
             <SurveyQuestion questionText={questions[0].questionText} setRadioValue={setRadioValueQ1} nameOfGroup="group1"/>
             <SurveyQuestion questionText={questions[1].questionText} setRadioValue={setRadioValueQ2} nameOfGroup="group2"/>
             <SurveyQuestion questionText={questions[2].questionText} setRadioValue={setRadioValueQ3} nameOfGroup="group3"/>
@@ -120,5 +127,12 @@ const PageWrapper = styled.div`
     }
     .errorDiv{
         color:red;
+    }
+    h3{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    h1{
+        font-size:20px;
     }
 `;
