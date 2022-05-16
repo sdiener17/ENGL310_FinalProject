@@ -53,6 +53,21 @@ export const sources = [
         title:"potter1",
         text:"Photo by Allison Batley on Unsplash",
         link:"https://unsplash.com/photos/9Rmmgj3wsJU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+    },
+    {
+        title:"waves1",
+        text:"Photo by Jeremy Bishop on Unsplash",
+        link:"https://unsplash.com/photos/iftBhUFfecE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+    },
+    {
+        title:"woman1",
+        text:"Photo by Kimson Doan on Unsplash",
+        link:"https://unsplash.com/photos/HD8KlyWRYYM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+    },
+    {
+        title:"woman2",
+        text:"Photo by Miguel Bruna on Unsplash",
+        link:"https://unsplash.com/photos/TzVN0xQhWaQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
     }
 ]
 

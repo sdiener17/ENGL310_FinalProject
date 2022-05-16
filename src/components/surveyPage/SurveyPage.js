@@ -79,7 +79,6 @@ export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAn
             <SurveyQuestion questionText={questions[4].questionText} setRadioValue={setRadioValueQ5} nameOfGroup="group5"/>
             <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/>
             <SurveyQuestion questionText={questions[6].questionText} setRadioValue={setRadioValueQ7} nameOfGroup="group7"/>
-            <SurveyQuestion questionText={questions[7].questionText} setRadioValue={setRadioValueQ8} nameOfGroup="group8"/>
             {/* <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/> */}
             {isError &&(
                 <div className="errorDiv">Please answer all questions.</div>

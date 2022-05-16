@@ -23,7 +23,7 @@ const PageWrapper = styled.div`
     align-items:center;
     justify-content:center;
 
-    margin-bottom:40px;
+    margin-bottom:60px;
     .cardImage{
         margin:5px;
         width:200px;
@@ -40,7 +40,7 @@ const PageWrapper = styled.div`
         flex-direction:row;
         justify-content:flex-start;
         align-items:center;
-        max-width:1000px;
+        max-width:1200px;
         padding:10px;
         background-color:var(--lightGrey);
         border-radius: 10px;
