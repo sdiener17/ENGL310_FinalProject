@@ -21,6 +21,8 @@ const PageWrapper = styled.div`
     justify-content:left;
 
     margin-bottom:60px;
+    margin-left:15px;
+    margin-right:15px;
 
     .textWrap{
         display:flex;
@@ -29,7 +31,7 @@ const PageWrapper = styled.div`
         align-items:center;
         max-width:1200px;
         padding:10px;
-        background-color:var(--lightGrey);
+        background-color:var(--cardGrey);
         border-radius: 10px;
         font-size: 1.2rem;
     }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { questions } from "../../data/questions";
@@ -25,6 +25,10 @@ export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAn
     const [radioValueQ7, setRadioValueQ7] = useState(null);
     const [radioValueQ8, setRadioValueQ8] = useState(null);
     const [isError, setIsError] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
 
 

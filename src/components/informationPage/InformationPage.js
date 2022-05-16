@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import TextAndImageCard from "../commonComponents/TextAndImageCard";
 import TextAndImageRightCard from "../commonComponents/TextAndImageRightCard";
@@ -10,6 +10,9 @@ import woman2 from "../../images/woman2.jpg";
 import woman1 from "../../images/woman1.jpg";
 
 export default function HomePage(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <PageWrapper>
             <div className="marginTop"/>
@@ -34,7 +37,7 @@ const PageWrapper = styled.div`
     align-items:left;
     flex-direction:column;
     width:100%;
-    padding-left:15px;
+    //padding-left:15px;
     //padding-top:10px;
     padding-bottom:60px;
     //margin-left:40px;
@@ -47,8 +50,10 @@ const PageWrapper = styled.div`
     h3{
         font-size:30px;
         margin-bottom:10px;
+        margin-left:15px;
     }
     h1{
         font-size:20px;
+        margin-left:15px;
     }
 `;

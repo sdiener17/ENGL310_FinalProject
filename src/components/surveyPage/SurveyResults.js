@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import { questions } from "../../data/questions";
 import SingleSurveyResult from "./SingleSurveyResult";
 
 export default function SurveyResults({userAnswers}) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   // Sample data
   const dataQuestion1 = [
     { name: "Yes", students: 400 },

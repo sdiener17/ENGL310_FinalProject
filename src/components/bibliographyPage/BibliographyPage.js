@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import TextAndImageCard from "../commonComponents/TextAndImageCard";
 import books1 from "../../images/books1.jpg";
 import { homepagedata } from "../../data/homepagedata";
 
 export default function HomePage(){
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <PageWrapper>
             <div className="marginTop"/>
