@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <FootWrapper>
       <div className="FooterMain">
-        <p>This Website was Created for a K-State ENGL 310 Research Project.</p>
+        <p>Sarah Diener's ENGL 310 Research Project.</p>
       </div>
     </FootWrapper>
   );

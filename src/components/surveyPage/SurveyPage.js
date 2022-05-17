@@ -111,15 +111,15 @@ const PageWrapper = styled.div`
         margin-bottom:30px;
     }
     .submitButton{
-        background: var(--purpleTwo);
+        background: var(--secondarySiteColor);
         color: var(--lighterGrey);
         padding: 0.5rem 1.0rem;
         border-radius:5px;
-        border: 2px solid var(--darkSiteColor);
+        border: 2px solid var(--darkerPink);
         text-decoration:none;
     }
     .submitButton:hover{
-        background: var(--purpleOne);
+        background: var(--darkerPink);
 
     }
     .textStuff{
