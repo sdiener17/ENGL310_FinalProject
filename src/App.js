@@ -42,7 +42,7 @@ export default function App() {
                 />
 
               <Route
-                exact path="/information"
+                exact path="/bibliography"
                 element={<BibliographyPage/>}
                 />
 
