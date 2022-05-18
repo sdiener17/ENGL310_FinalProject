@@ -56,7 +56,7 @@ export const evaluationpagedata = {
         pronunciation of a spell and herself performs it correctly. After this, Ron says, “It’s no wonder no on can stand her… 
         she’s a nightmare, honestly.” (Rowling 172) and a few lines later says, “She must’ve noticed she’s got not friends.” 
         (Rowling 172). Andrea Powers addresses this scene in her dissertation over gender and race constructions in several 
-        Harry Potter books. She states, “This implies that they do not consider themselves to be friends with her, even though 
+        *Harry Potter* books. She states, “This implies that they do not consider themselves to be friends with her, even though 
         she had saved them with her knowledge of magic” (Powers). This shows how unwilling Harry and Ron were to be friends with 
         Hermione initially due to her “know-it-all” personality. Powers also observes that Ron seems to be angry that Hermione 
         appears smarter than he is, so he makes a comment that “her behavior is distasteful to everyone at the school” (Powers). 
@@ -68,11 +68,11 @@ export const evaluationpagedata = {
         interfere with her intelligence” (Powers). Harry and Ron end up having to save her from the troll, which goes back to the 
         stereotype of males saving the females. `,
     text10:`Hermione is also given a sort of motherly role throughout the books. Melanie Cordova touches on this in her article about 
-        gender in Harry Potter. She states about Hermione that, “Her proficiency as knowledge-bearer is either displayed in a motherly 
+        gender in the *Harry Potter* series. She states about Hermione that, “Her proficiency as knowledge-bearer is either displayed in a motherly 
         way, is undermined by language that renders her hysterical, or by behavior that renders her servile.” (Cordova). Hermione uses 
         her knowledge to take care of Harry and Ron. She can often be seen chastising the boys for their rash decisions or helping 
         them with various things (“It was really lucky that Harry now had Hermione as a friend. He didn’t know how he’d have gotten 
-        through all his homework without her” (Rowling 181). Cordova also observes that, “The intersection of Hermione's 
+        through all his homework without her” (Rowling 181)). Cordova also observes that, “The intersection of Hermione's 
         knowledge-bearer position and that of a motherly figure can be quite a positive representation of a young woman, but 
         the fact that it is Harry who applies the motherly layer to Hermione makes the representation less Hermione's choice 
         and more Harry's vision for the women around him.” (Cordova). This shows the ways in which Hermione is not allowed to 

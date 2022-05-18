@@ -5,7 +5,7 @@ export const questions = [
         correctAnswer: "Yes",
         explanation: `This rating seems to be a bit contraversial. 
             There is evidence that two female characters talk to each other, however, 
-            their conversation is somewhat about men, since one of the female (Hermione) is telling 
+            their conversation is somewhat about men, since one of the females (Hermione) is telling 
             the other female (Professor McGonagall) that Harry and Ron (both male) saved her from the troll.`
     },
     {

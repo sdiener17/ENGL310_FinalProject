@@ -115,7 +115,7 @@ const PageWrapper = styled.div`
         color: var(--lighterGrey);
         padding: 0.5rem 1.0rem;
         border-radius:5px;
-        border: 2px solid var(--darkerPink);
+        border: 2px solid var(--secondarySiteColor);
         text-decoration:none;
     }
     .submitButton:hover{

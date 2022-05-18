@@ -19,5 +19,5 @@ export const surveypagedata = {
         be expanded upon, since the three requirements of it aren’t bad by any means.`,
     text4:`Below is a survey of popular movies from 2001 (the year “Harry Potter and the Sorcerer’s Stone” was released). 
         You will be asked to guess if the movie passes the Bechdel test (yes for passes and no for not passing). All movie 
-        information is retrieved from bechdeltest.com.`
+        information is retrieved from [bechdeltest.com](https://bechdeltest.com/).`
 }
