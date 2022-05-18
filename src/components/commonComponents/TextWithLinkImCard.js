@@ -7,7 +7,8 @@ export default function TextWithLinkCard({text, link, image}){
         <PageWrapper>
             <div className="textWrap">
                 <div>{text}</div>
-                <Link to={link}>{link}</Link>
+                <a href={link} target="_blank">{link}</a>
+                {/* <Link to={link} target="_blank">{link}</Link> */}
                 <div className="imageContainer">
                     <img className="cardImage" src={image} ></img>
                 </div>
